@@ -1,0 +1,103 @@
+.footer {
+  display: flex;
+}
+
+.footer__social {
+  display: flex;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__social li {
+  position: relative;
+  padding: 0 24px;
+}
+
+.footer__social li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+}
+
+.footer__social li:nth-child(1) {
+  padding-left: 0;
+}
+
+.footer__social li:nth-last-child(1) {
+  padding-right: 0;
+}
+
+.footer__social li:nth-last-child(1)::after {
+  content: none;
+}
+
+.footer__info {
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__copyright {
+  margin: 0;
+}
+
+.footer__social-link {
+  display: block;
+  padding-left: 24px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.154px;
+  color: rgba(255, 255, 255, 0.5);
+  background-position: left 0, center;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+}
+
+.footer__social-link--slack {
+  background-image: url("img/slack.svg");
+}
+
+.footer__social-link--twitter {
+  background-image: url("img/twitter.svg");
+}
+
+.footer__info {
+  margin-right: 24px;
+}
+
+.footer__info li {
+  margin-right: 24px;
+}
+
+.footer__info li:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.footer__info a {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  letter-spacing: -0.154px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__copyright {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.154px;
+  color: rgba(255, 255, 255, 0.25);
+}
