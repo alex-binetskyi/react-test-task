@@ -5,6 +5,16 @@
   align-items: center;
 }
 
+@media (max-width: 599px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    margin-bottom: 16px;
+  }
+}
+
 .header__logo a {
   text-decoration: none;
 }
@@ -50,8 +60,9 @@
   font-family: "SF Pro Text", "Arial", sans-serif;
   letter-spacing: -0.32px;
   color: #FFFFFF;
-  background-color: #46388a;
+  background-color: #6045E5;
   border: 2px solid rgba(255, 255, 255, 0.16);
   border-radius: 8px;
   cursor: pointer;
+  border: none;
 }
